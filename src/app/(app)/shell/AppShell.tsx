@@ -34,9 +34,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         {navItems.map((item) => (
           <ListItemButton
             key={item.href}
-            component={Link}
+            component={Link as any}
             href={item.href}
             selected={pathname === item.href}
+            sx={{ textDecoration: 'none' }}
           >
             <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.label} />
