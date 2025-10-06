@@ -1,0 +1,6 @@
+:root {
+  --app-nav-width: 280px;
+}
+html, body, #__next { height: 100%; }
+body { margin: 0; }
+* { box-sizing: border-box; }
